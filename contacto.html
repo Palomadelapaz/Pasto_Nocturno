@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="Proyecto_final.css">
+    </head>
+
+    <body class="contacto">
+
+        <header>
+
+            <a name="arriba"></a>
+    
+            <nav class="menu">
+
+                <div class="logo">
+                    <a href="index.html" id="stars"><img src="Imagenes/star_1.png"></a>
+                    <h1 id="titulo_pasto">Pasto Nocturno</h1>
+                </div>
+                
+                <ul class="menu_principal">
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li class="desplegable">
+                        <a href="#">Top</a>
+                        <ul class="submenu">
+                            <li><a href="top10.html">Top 10</a></li>
+                            <li><a href="top1.html">Top 1</a></li>
+                            <li><a href="top2.html">Top 2</a></li>
+                            <li><a href="top3.html">Top 3</a></li>                                                                
+                        </ul>
+                    </li>
+
+                    <li class="desplegable">
+                        <a href="#">Géneros</a>
+                        <ul class="submenu">
+                            <li><a href="sitcoms.html">Sitcoms</a></li>
+                            <li><a href="animacion.html">Animación</a></li>
+                            <li><a href="pilluko.html">Pilluko</a></li>
+                            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="presentacion">
+            <h2>CONTACTO</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quibusdam cupiditate eveniet temporibus placeat, dignissimos quaerat aperiam ullam explicabo enim, quis repudiandae repellendus ea reprehenderit molestiae vel quae voluptatum totam.
+            </p>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>¡Hola! ¿Quién eres?</legend>
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Introduce nombre" class="intro">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Introduce email" class="intro">
+                <br>
+                <label for="favorita">Serie favorita</label>
+                <input type="text" name="favorita" placeholder="Introduce serie" class="intro">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Las series y tú</legend>
+                <label for="genero">¿Cuál es el género que más consumes?</label>
+                <div class="radiob">
+                    <input type="radio" name="genero" value="sitcom">Sitcom<br>
+                    <input type="radio" name="genero" value="bizarro">Bizarro<br>
+                    <input type="radio" name="genero" value="drama">Drama<br>
+                    <input type="radio" name="genero" value="animacion">Animación<br>
+                </div>
+
+                <br>                
+                <label for="top10">¿Viste alguna serie de mi Top 10?</label>
+                <div class="checks">
+                    <input type="checkbox" name="serie1" value="me_llamo_earl">1.  Me llamo Earl<br>
+                    <input type="checkbox" name="serie2" value="the_good_place">2.  The Good Place<br>
+                    <input type="checkbox" name="serie3" value="sense8">3.  Sense8<br>
+                    <input type="checkbox" name="serie4" value="hora_de_aventuras">4.  Hora de Aventuras<br>
+                    <input type="checkbox" name="serie5" value="friends">5.  Friends<br>
+                    <input type="checkbox" name="serie6" value="rick_y_morty">6.  Rick y Morty<br>  
+                    <input type="checkbox" name="serie7" value="grace_and_frankie">7.  Grace and Frankie<br>
+                    <input type="checkbox" name="serie8" value="parks_and_recreation">8.  Parks and Recreation<br>
+                    <input type="checkbox" name="serie9" value="stranger_things">9.  Stranger Things<br>
+                    <input type="checkbox" name="serie10" value="sex_education">10. Sex Education<br>        
+                </div>
+                                      
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ahora tú</legend>
+                ¿Qué serie crees que falta en mi Top 10?<br>
+                <select name="todaslasseries" class="intro">
+                    <option value="selecciona">Selecciona</option>
+                    <option value="the_office">The Office</option>
+                    <option value="historias_corrientes">Historias Corrientes</option>
+                    <option value="dark">Dark</option>
+                    <option value="shameless">Shameless</option>
+                    <option value="como_conoci_a_vuestra_madre">Cómo conocí a vuestra madre</option>
+                    <option value="el_asombroso_mundo_de_gumball">El asombroso mundo de Gumball</option>
+                    <option value="black_mirror">Black Mirror</option>
+                    <option value="better_call_saul">Better Call Saul</option>
+                    <option value="modern_family">Modern Family</option>
+                    <option value="bojack_horseman">Bojack Horseman</option>
+                    <option value="lost">Lost</option>
+                    <option value="euphoria">Euphoria</option>
+                    <option value="aqui_no_hay_quien_viva">Aquí no hay quién viva</option>
+                    <option value="the_midnight_gospel">The Midnight Gospel</option>
+                    <option value="the_oa">The OA</option>
+                    <option value="animal">Animal</option>
+                    <option value="brooklyn_nine_nine">Brooklyn Nine-Nine</option>
+                    <option value="carol_y_el_fin_del_mundo">Carol y el fin del mundo</option>
+                    <option value="muñeca_rusa">Muñeca Rusa</option>
+                    <option value="after_life">After Life</option>
+                </select>
+                Recomiéndame una serie o cuéntame tu Top 3
+                <textarea cols="30" rows="10" name="ahoratu"></textarea>
+            </fieldset>
+
+            <fieldset id="botones">
+                <button type="submit" id="enviar">Enviar datos</button>
+                <button type="reset" id="borrar">Eliminar datos</button>
+                <button type="button" onclick="window.alert('¡Muchas gracias por participar!')">¡A pastar!</button>
+            </fieldset>
+        </form>
+
+        <div>
+            <a href="#arriba" id="stars_up"><img src="Imagenes/star_1.png"></a>
+        </div>
+
+        <footer>
+            <p>© 2026 - Paloma de la Paz - Todos los derechos reservados</p>
+        </footer>
+
+    </body>
+</html>
