@@ -223,10 +223,10 @@ main
 
 .presentacion p
 {
-    max-width: 600px;
+    max-width: 450px;
     margin: 0 auto;
     line-height: 1.6;
-    color: rgb(130, 132, 153);;
+    color: rgb(130, 132, 153);
 }
 
 #pasto
@@ -245,6 +245,8 @@ main
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -391,12 +393,17 @@ body.top10
     left: 40px;
     z-index: 2;
     color: white;
-    max-width: 800px;
+    max-width: 950px;
 }
 
 .texto-overlay h2
 {
-    font-size: 5rem;
+    font-size: 6rem;
+}
+
+#t7
+{
+    color:rgb(31, 31, 31);
 }
 
 .numero
@@ -504,6 +511,15 @@ body.top10
     color: rgb(223, 198, 198);
 }
 
+#ttop2
+{
+    color: rgb(245, 255, 219);
+}
+
+#ttop3
+{
+    color:rgb(255, 228, 212);
+}
 
 body.earl
 {
@@ -558,13 +574,14 @@ body.generos
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 3rem;
+    color:rgb(224, 231, 255)
 }
 
 .subtitulo_generos
 {
     display: flex;
     justify-content: center;
-    color: #535668;
+    color: #6c6f85;
     margin-bottom: 15px;
     opacity: 0;
     transform: translateY(8px);
@@ -576,7 +593,7 @@ body.generos
 {
     display: flex;
     justify-content: center;
-    color: #2e2e38;
+    color: #484857;
     opacity: 0;
     transform: translateY(8px);
     animation: soft 2.2s ease forwards;
@@ -598,7 +615,7 @@ body.generos
     align-items: center;
     gap: 40px;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 40px;
     border-radius: 16px;
 }
@@ -742,8 +759,8 @@ button
 
 #enviar
 {
-    background-color: #a270ff;
-    color: black;
+    background-image: url(Imagenes/skyblue_back_2.png);
+    color: white;
 }
 
 #borrar
@@ -801,6 +818,12 @@ button
     .overlay
     {
         bottom: 10px;
+        max-width: 800px;
+    }
+
+    .texto-overlay h2
+    {
+        font-size: 5rem;
     }
 
     .numero
