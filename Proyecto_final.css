@@ -1,8 +1,3 @@
-@font-face 
-{
-    font-family: 'Parisien Night';
-    src: url(Fuentes/ParisienNight.otf) format("opentype");
-}
 
 @font-face 
 {
@@ -15,6 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
 }
 
 body
@@ -323,31 +323,63 @@ p
 /*SUBIR*/
 
 
-#stars_up
+.stars_up
 {
     display: block;
-    padding: 10px;
+    padding: 15px;
     justify-self: center;
     margin-top: 40px;
     text-decoration: none;
 }
 
-#stars_up img
+.stars_up img
 {
-    height: 90px;;
+    height: 85px;
 }
 
-#stars_up:hover
+.stars_up:hover
 {
     background-color: #35334d;
-    border-radius: 60px;
+    border-radius: 75px;
 }
 
-#stars_up:active
+.stars_up:active
 {
     background-color: #48446b;
-    border-radius: 60px;
+    border-radius: 75px;
 }
+
+#stars_up_top1:hover
+{
+    background-color: #522727;
+}
+
+#stars_up_top1:active
+{
+    background-color: #682222;
+}
+
+#stars_up_top2:hover
+{
+    background-color: #314e35;
+}
+
+#stars_up_top2:active
+{
+    background-color: #375a33;
+}
+
+#stars_up_top3:hover
+{
+    background-color: #522752;
+}
+
+#stars_up_top3:active
+{
+    background-color: #582f58;
+}
+
+
 
 /*FOOTER*/
 
@@ -427,7 +459,8 @@ body.top10
 
 
 
-/*------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
 /*TOP 3*/
 
 .top3
@@ -675,7 +708,6 @@ body.generos
 {
     text-align: center;
     font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(224, 224, 255);
 }
 
@@ -702,7 +734,7 @@ body.contacto
 form
 {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
 }
 
@@ -770,8 +802,47 @@ button
     color: white;
 }
 
+#little
+{
+    display: flex;
+    justify-content: center;
+    height:80px;
+}
 
+.reflexion
+{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
 
+#reflexion_final
+{
+    background-image: url(Imagenes/skyblue_front_3.png);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    border-radius: 10px;
+}
+
+#reflexion_final h2
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color:rgb(224, 231, 255)
+}
+
+#reflexion_final p
+{
+    text-align: justify;
+    color:rgb(182, 181, 214);
+    margin-bottom: 20px;
+}
 
 
 
